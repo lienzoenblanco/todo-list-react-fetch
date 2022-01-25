@@ -10,3 +10,51 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+html {
+    /* background: #ddd; */
+    height: 100%;
+    display: flex;
+}
+
+body {
+    font-family: sans-serif;
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+}
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 4cm;
+    text-align: center;
+    color: #2D2424;
+}
+
+input {
+    width: 100%;
+    align-items: center;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px dotted #e6e6e6;
+    position: relative;
+}
+
+.button-remove {
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    color: lightcoral;
+    align-items: center;
+    font-size: 20px;
+    top: 0px;
+    cursor: pointer;
+  }
