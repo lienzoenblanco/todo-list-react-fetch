@@ -5,10 +5,6 @@ const Todo = () => {
 	const [todoList, setTodoList] = useState([]);
 	const [todo, setTodo] = useState({ label: "", done: false });
 	const [loading, setLoading] = useState(true);
-	// const [state, setState] = useReducer(
-	// 	(state, newState) => ({ ...state, ...newState }),
-	// 	{ loading: true, todoList: [], todo: { label: "", done: false } }
-	// );
 
 	const getAllTodos = () => {
 		getTodos()
@@ -18,7 +14,6 @@ const Todo = () => {
 			.then((data) => {
 				setTodoList(data);
 				setLoading(false);
-				// setTodo({ todoList: data, loading: false });
 			})
 			.catch((err) => {
 				alert(err);
